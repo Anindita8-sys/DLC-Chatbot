@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DLC Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chatbot">
+    <div class="chat-window" id="chat-window"></div>
+    <div class="controls">
+      <select id="language">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="bn">Bengali</option>
+      </select>
+      <select id="tone">
+        <option value="friendly">Friendly</option>
+        <option value="professional">Professional</option>
+        <option value="casual">Casual</option>
+      </select>
+      <button id="mic">🎤</button>
+    </div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Ask me about WhatsApp, Paytm, Google Maps..." required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
